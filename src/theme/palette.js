@@ -8,15 +8,15 @@ export default {
   white,
   primary: {
     contrastText: white,
-    dark: '#1034a6',
-    main: '#1034a6',
-    light: '#1034a6'
+    dark: '#4E9FC2',
+    main: '#4E9FC2',
+    light: '#4E9FC2'
   },
   secondary: {
     contrastText: white,
-    dark: colors.red[900],
-    main: colors.red['A400'],
-    light: colors.red['A400']
+    dark: "#ED1D24",
+    main: "#ED1D24",
+    light: "#ED1D24"
   },
   success: {
     contrastText: white,
@@ -51,6 +51,6 @@ export default {
     default: '#F4F6F8',
     paper: white
   },
-  icon: colors.red[600],
+  icon: "#ED1D24",
   divider: colors.grey[200]
 };

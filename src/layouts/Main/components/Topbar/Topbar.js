@@ -22,7 +22,8 @@ import { NavBar } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    boxShadow: 'none'
+    //boxShadow: 'none'
+    backgroundColor:theme.palette.white
   },
   flexGrow: {
     flexGrow: 1
@@ -35,17 +36,17 @@ const useStyles = makeStyles(theme => ({
 const Topbar = props => {
   const pages = [
     {
-      title: 'Dashboard',
-      href: '/dashboard',
+      title: 'Home',
+      href: '/home',
       icon: <DashboardIcon />
     },
     {
-      title: 'Transactions',
+      title: 'About Us',
       href: '/transactions',
       icon: <PeopleIcon />
     },
     {
-      title: 'Products',
+      title: 'News',
       href: '/products',
       icon: <ShoppingBasketIcon />
     },
@@ -55,25 +56,25 @@ const Topbar = props => {
     //   icon: <LockOpenIcon />
     // },
     {
-      title: 'Typography',
+      title: 'Careers',
       href: '/typography',
       icon: <TextFieldsIcon />
     },
     {
-      title: 'Icons',
+      title: 'Publications',
       href: '/icons',
       icon: <ImageIcon />
     },
     {
-      title: 'Account',
+      title: 'Projects',
       href: '/account',
       icon: <AccountBoxIcon />
     },
-    {
-      title: 'Settings',
-      href: '/settings',
-      icon: <SettingsIcon />
-    }
+    // {
+    //   title: 'Settings',
+    //   href: '/settings',
+    //   icon: <SettingsIcon />
+    // }
   ];
   const { className, onSidebarOpen, ...rest } = props;
 
@@ -88,7 +89,7 @@ const Topbar = props => {
     >
       <Toolbar>
         <RouterLink to="/">
-        <Typography style={{color:'#fff'}} variant="h4">Philial Logo Here</Typography>
+        <Typography color="primary" variant="h4">Logo Here</Typography>
         </RouterLink>
         <div className={classes.flexGrow} />
         <Hidden mdDown>
@@ -96,7 +97,7 @@ const Topbar = props => {
           className={classes.nav}
           pages={pages}
         />
-          <IconButton color="inherit">
+          {/* <IconButton color="inherit">
             <Badge
               badgeContent={notifications.length}
               color="primary"
@@ -110,7 +111,7 @@ const Topbar = props => {
             color="inherit"
           >
             <InputIcon />
-          </IconButton>
+          </IconButton> */}
         </Hidden>
         <Hidden lgUp>
           <IconButton

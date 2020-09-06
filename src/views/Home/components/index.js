@@ -1,5 +1,5 @@
-export { default as Referrals } from './Referrals';
-export { default as LatestOrders } from './LatestOrders';
+export { default as Carousel } from './Carousel';
+export { default as AboutUs } from './AboutUs';
 export { default as LatestProducts } from './LatestProducts';
 export { default as LatestSales } from './LatestSales';
 export { default as ChampionBonus } from './ChampionBonus';

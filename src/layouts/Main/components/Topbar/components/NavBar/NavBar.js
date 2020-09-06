@@ -16,16 +16,27 @@ const useStyles = makeStyles(theme => ({
   item: {
     display: 'flex',
     paddingTop: 0,
-    paddingBottom: 0
+    paddingBottom: 0,
+    marginRight:10,
+    minWidth:80
   },
   button: {
+    
     color: colors.grey[400],
     padding: '10px 8px',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     textTransform: 'none',
     letterSpacing: 0,
     width: '100%',
-    fontWeight: theme.typography.fontWeightMedium
+    fontWeight: theme.typography.fontWeightMedium,
+    '&:hover': {
+      fontWeight: theme.typography.fontWeightMedium,
+      backgroundColor: colors.grey[200],
+     color: colors.grey[400],
+      '& $icon': {
+        color: colors.grey[400],
+      },}
+   
   },
   icon: {
     color: theme.palette.icon,
@@ -36,11 +47,20 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(1)
   },
   active: {
+    backgroundColor:theme.palette.primary.dark,
     color: theme.palette.white,
     fontWeight: theme.typography.fontWeightMedium,
     '& $icon': {
       color: theme.palette.white
-    }
+    },
+    '&:hover': {
+      fontWeight: theme.typography.fontWeightMedium,
+      backgroundColor: theme.palette.secondary.dark,
+      color:  "#ffffff",
+      '& $icon': {
+        color:"#ffffff",
+      },}
+    
   }
 }));
 

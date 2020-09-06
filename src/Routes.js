@@ -6,7 +6,7 @@ import { Main as MainLayout, Minimal as MinimalLayout } from './layouts';
 import  ProtectedRoute  from './ProtectedRoute';
 
 import {
-  Dashboard as DashboardView,
+  Home as HomeView,
   ProductList as ProductListView,
   Transactions as TransactionsView,
   Typography as TypographyView,
@@ -25,13 +25,13 @@ const Routes = () => {
       <Redirect
         exact
         from="/"
-        to="/dashboard"
+        to="/home"
       />
        <ProtectedRoute
-      component={DashboardView}
+      component={HomeView}
         exact
         layout={MainLayout}
-        path="/dashboard"/>
+        path="/home"/>
       {/* <RouteWithLayout
         component={DashboardView}
         exact
