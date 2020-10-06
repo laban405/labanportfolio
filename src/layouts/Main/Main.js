@@ -8,18 +8,20 @@ import { Sidebar, Topbar, Footer } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
-   
-    paddingTop: 56,
+    backgroundColor:"white",
+    //paddingTop: 56,
     height: '100%',
     [theme.breakpoints.up('sm')]: {
-      paddingTop: 64
+      paddingTop: 0
     }
   },
   shiftContent: {
+    backgroundColor:"white",
     //paddingLeft: "auto"
   },
   content: {
-    height: '100%'
+    height: '100%',
+    backgroundColor:"white",
   }
 }));
 
@@ -51,15 +53,15 @@ const Main = props => {
         [classes.shiftContent]: isDesktop
       })}
     >
-      <Topbar onSidebarOpen={handleSidebarOpen} />
+      {/* <Topbar onSidebarOpen={handleSidebarOpen} />
       <Sidebar
         onClose={handleSidebarClose}
         open={shouldOpenSidebar}
         variant={isDesktop ? 'persistent' : 'temporary'}
-      />
+      /> */}
       <main className={classes.content}>
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </div>
   );

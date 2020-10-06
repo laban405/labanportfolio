@@ -2,21 +2,22 @@ import { colors } from '@material-ui/core';
 
 const white = '#FFFFFF';
 const black = '#000000';
-
+const newblack="#1E1B18"
 export default {
   black,
   white,
+  newblack,
   primary: {
     contrastText: white,
-    dark: '#4E9FC2',
-    main: '#4E9FC2',
-    light: '#4E9FC2'
+    dark: '#1a1b41',
+    main: '#1a1b41',
+    light: '#1a1b41'
   },
   secondary: {
     contrastText: white,
-    dark: "#ED1D24",
-    main: "#ED1D24",
-    light: "#ED1D24"
+    dark: "#fb5012",
+    main: "#fb5012",
+    light: "#fb5012"
   },
   success: {
     contrastText: white,
@@ -43,14 +44,14 @@ export default {
     light: colors.red[400]
   },
   text: {
-    primary: colors.blueGrey[900],
-    secondary: colors.blueGrey[600],
-    link: '#1034a6'
+    primary: "#2e2e2e",
+    secondary: "#2e2e2e",
+    link: '#fb5012'
   },
   background: {
-    default: '#F4F6F8',
+    default: '#ffffff',
     paper: white
   },
-  icon: "#ED1D24",
+  icon: "#fb5012",
   divider: colors.grey[200]
 };

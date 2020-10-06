@@ -7,6 +7,7 @@ import  ProtectedRoute  from './ProtectedRoute';
 
 import {
   Home as HomeView,
+  HomePage as HomePageView,
   ProductList as ProductListView,
   Transactions as TransactionsView,
   Typography as TypographyView,
@@ -25,8 +26,13 @@ const Routes = () => {
       <Redirect
         exact
         from="/"
-        to="/home"
+        to="/homepage"
       />
+        <ProtectedRoute
+      component={HomePageView}
+        exact
+        layout={MainLayout}
+        path="/homepage"/>
        <ProtectedRoute
       component={HomeView}
         exact

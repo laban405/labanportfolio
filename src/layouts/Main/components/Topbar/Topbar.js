@@ -23,7 +23,7 @@ import { NavBar } from './components';
 const useStyles = makeStyles(theme => ({
   root: {
     //boxShadow: 'none'
-    backgroundColor:theme.palette.white
+    backgroundColor:theme.palette.primary.dark,
   },
   flexGrow: {
     flexGrow: 1
@@ -41,12 +41,12 @@ const Topbar = props => {
       icon: <DashboardIcon />
     },
     {
-      title: 'About Us',
+      title: 'Services',
       href: '/transactions',
       icon: <PeopleIcon />
     },
     {
-      title: 'News',
+      title: 'Skills',
       href: '/products',
       icon: <ShoppingBasketIcon />
     },
@@ -56,20 +56,20 @@ const Topbar = props => {
     //   icon: <LockOpenIcon />
     // },
     {
-      title: 'Careers',
+      title: 'Projects',
       href: '/typography',
       icon: <TextFieldsIcon />
     },
     {
-      title: 'Publications',
+      title: 'About',
       href: '/icons',
       icon: <ImageIcon />
     },
-    {
-      title: 'Projects',
-      href: '/account',
-      icon: <AccountBoxIcon />
-    },
+    // {
+    //   title: 'Projects',
+    //   href: '/account',
+    //   icon: <AccountBoxIcon />
+    // },
     // {
     //   title: 'Settings',
     //   href: '/settings',
@@ -85,11 +85,12 @@ const Topbar = props => {
   return (
     <AppBar
       {...rest}
+      elevation="0"
       className={clsx(classes.root, className)}
     >
       <Toolbar>
         <RouterLink to="/">
-        <Typography color="primary" variant="h4">Logo Here</Typography>
+        <Typography color="secondary" variant="h4">Laban</Typography>
         </RouterLink>
         <div className={classes.flexGrow} />
         <Hidden mdDown>

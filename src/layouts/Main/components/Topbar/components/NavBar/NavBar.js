@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     
-    color: colors.grey[400],
+    color: colors.grey[600],
     padding: '10px 8px',
     justifyContent: 'center',
     textTransform: 'none',
@@ -31,8 +31,8 @@ const useStyles = makeStyles(theme => ({
     fontWeight: theme.typography.fontWeightMedium,
     '&:hover': {
       fontWeight: theme.typography.fontWeightMedium,
-      backgroundColor: colors.grey[200],
-     color: colors.grey[400],
+      backgroundColor:theme.palette.primary.dark,
+     color: theme.palette.secondary.main,
       '& $icon': {
         color: colors.grey[400],
       },}

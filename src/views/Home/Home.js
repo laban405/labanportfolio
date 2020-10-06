@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     paddingTop: theme.spacing(1),
     heght:"auto",
-    backgroundColor:"white"
+    backgroundColor:theme.palette.primary.dark,
   }
 }));
 

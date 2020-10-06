@@ -27,7 +27,7 @@ import { StatusBullet } from "components";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // backgroundColor: "#727272",
+    backgroundColor:theme.palette.primary.dark,
     // height: "500px",
     //marginTop:"50px",
     paddingBottom: 10,
