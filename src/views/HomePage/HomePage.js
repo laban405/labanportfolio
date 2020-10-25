@@ -6,7 +6,9 @@ import { Grid } from '@material-ui/core';
 import {
   Menu,
   LandingSection,
-  Portfolio
+  Portfolio,
+  Work,
+  About
 } from './components';
 import {
   ScrollingProvider,
@@ -18,7 +20,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     width:"100",
     //paddingTop: theme.spacing(1),
-    heght:"auto",
+    height:"auto",
     //backgroundColor:"green",
   },
   marginAutoContainer: {
@@ -49,14 +51,10 @@ const HomePage = () => {
      <Portfolio/>
     </Section>
     <Section id="work">
-    <div style={{height:"100vh", width:'100%', backgroundColor:'yellow'}}>
-
-</div>
+    <Work/>
     </Section>
     <Section id="about">
-    <div style={{height:"100vh", width:'100%', backgroundColor:'purple'}}>
-
-</div>
+    <About/>
     </Section>
     <Section id="fun">
     <div style={{height:"100vh", width:'100%', backgroundColor:'orange'}}>

@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuItem: {
     height: "100%",
+    fontWeight:700
   },
   item: {
     display: "flex",

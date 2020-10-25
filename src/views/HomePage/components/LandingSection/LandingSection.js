@@ -67,19 +67,18 @@ const useStyles = makeStyles((theme) => ({
   },
   landingtext:{
     marginLeft: 50,
-    marginTop: 300,
+    marginTop: 250,
     marginBottom: 0,
     [theme.breakpoints.down("sm")]: {
         marginTop: 50,
     },
+  },
+  button:{
+margin:10
   }
 }));
 
-const statusColors = {
-  delivered: "success",
-  pending: "info",
-  refunded: "danger",
-};
+
 
 const LandingSection = (props) => {
   const { className, ...rest } = props;
@@ -139,6 +138,10 @@ const LandingSection = (props) => {
               <Typography variant="h3"  style={{fontWeight:600}} color="secondary">
                 I create better experiences for people.
               </Typography>
+
+              {/* <Button class={classes.button}>
+               Contact
+              </Button> */}
             </div>
           </Grid>
           <Grid item lg={5} md={5} sm={12} xs={12} xl={5}>

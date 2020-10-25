@@ -56,6 +56,17 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#1a1b41",
     marginBottom: 20,
   },
+  header:{
+    //color: '',
+    marginLeft: 50,
+    fontWeight: 600,
+    paddingTop: 20,
+    fontSize: 30,
+    marginBottom: 20,
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: 20,
+    },
+  }
 }));
 
 const statusColors = {
@@ -86,7 +97,7 @@ const Portfolio = (props) => {
               }}
               gutterBottom
             >
-              Happy Clients
+              I Have Worked With
             </Typography>
             <Ticker>
 
@@ -111,14 +122,7 @@ const Portfolio = (props) => {
           <Typography
             variant="h5"
             color="primary"
-            style={{
-              //color: '',
-              marginLeft: 50,
-              fontWeight: 600,
-              paddingTop: 20,
-              fontSize: 30,
-              marginBottom: 20,
-            }}
+           className={classes.header}
           >
             Portfolio
           </Typography>
